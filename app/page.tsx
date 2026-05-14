@@ -419,7 +419,7 @@ export default function Page() {
             Transform static images into dynamic videos using state-of-the-art Kling AI motion control.
           </p>
           <a
-            href="https://www.facebook.com/ahmat.cookies"
+            href="https://www.facebook.com/tiarasikamulia"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-4 text-xs text-[#a1a1aa] hover:text-white transition-colors group"
