@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-card: #141414;
+  --bg-input: #0f0f0f;
+  --border: #2a2a1a;
+  --border-yellow: #3a3200;
+  --accent: #f5c518;
+  --accent-hover: #ffd84d;
+  --accent-dim: #c9a010;
+  --text-primary: #f5f5f0;
+  --text-secondary: #888878;
+  --text-muted: #444438;
+}
+
+html,
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+input[type="range"] {
+  accent-color: var(--accent);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.card-yellow {
+  border-color: var(--border-yellow);
+}
+
+.progress-bar-track {
+  background: #1c1c0a;
+  border-radius: 9999px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, #f5c518, #ffd84d);
+  height: 100%;
+  border-radius: 9999px;
+  width: 100%;
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%) scaleX(0.4);
+  }
+  50% {
+    transform: translateX(60%) scaleX(0.6);
+  }
+  100% {
+    transform: translateX(300%) scaleX(0.4);
+  }
+}
+
+.progress-bar-indeterminate {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #f5c518 40%,
+    #ffd84d 60%,
+    transparent
+  );
+  animation: indeterminate 1.6s ease-in-out infinite;
+  border-radius: 9999px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #3a3200;
+  border-radius: 2px;
+}
