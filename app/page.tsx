@@ -539,7 +539,7 @@ export default function Page() {
                 placeholder="e.g. The character walks forward slowly..."
                 rows={3}
                 className="w-full bg-[#09090b] border border-white/10 focus:border-[#FF5F45]/50 focus:ring-1 focus:ring-[#FF5F45]/20 rounded-xl px-4 py-3.5 text-sm text-[#f4f4f5] placeholder:text-zinc-600 outline-none resize-none transition-all"
-              />Animate the woman from the image so she performs the same dance movements as in the video, while preserving the original scene and environment.
+              Animate the woman from the image so she performs the same dance movements as in the video, while preserving the original scene and environment. />
 
               <div>
                 <div className="flex items-baseline justify-between">
